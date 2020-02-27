@@ -1,0 +1,133 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+}
+ */
+
+.container {
+    background-color: white
+    padding:10%;
+    /* height: 100%; */
+    display: grid;
+    background-image: url(Pink.svg);
+    background-repeat:no-repeat;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:auto;
+    grid-template-areas: 
+        "q q h h h p p p p p p"
+        "q q c c c s s s e e e";
+
+}
+
+ p {
+    color: white;
+}
+li{
+    font-weight: 500;
+    padding:1px;
+}
+
+body{
+    font-size: 1.5em;
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 135px;
+    color: white
+}
+
+h2{
+    font-size: 43px;
+    font-weight: 800;
+    color: white
+}
+
+h3{
+    padding-top:45px;
+    color: rgb(244, 154,193);
+}
+
+h4{
+    font-weight: 600;
+}
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media screen and (max-width: 800px) {
+
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        background-size: 120em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "p"
+        "c"
+        "s"
+        "e";
+    }
+
+}
+
+/* step 1 - assign each of your sections a letter */
+
+header {
+    grid-area: h;
+    transform: rotate(-90deg);
+    padding-top: 125pt;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.contact {
+    grid-area: c;
+    padding-left: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.skills {
+    grid-area: s;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    padding-left: 35px
+}
+
+.education {
+    grid-area: e;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.portrait {
+    grid-area: p;
+    max-width: 0px;
+    height: 550px;
+    padding-top: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
