@@ -37,6 +37,7 @@
 p {
     color: white;
 }
+
 li{
     font-weight: 300;
     padding:1px;
@@ -86,6 +87,14 @@ h4{
         "s"
         "e";
     }
+    header {
+        grid-area: h;
+        transform: rotate(-90deg);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        padding-bottom: 450px;
+        text-align: left;
+    }
 }
 
 header {
@@ -100,12 +109,14 @@ header {
     grid-area: r;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 .skills {
     grid-area: s;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+    padding-left: 10px;
 
 }
 
@@ -114,6 +125,7 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     padding-bottom: 50pt;
+    padding-left: 10px;
 }
 
 .portrait {
