@@ -95,6 +95,9 @@ h4{
         padding-bottom: 450px;
         text-align: left;
     }
+    img{
+        width: 375pt;
+    }
 }
 
 header {
